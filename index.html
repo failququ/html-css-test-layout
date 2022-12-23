@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+      body{
+        font-family: 'Inter';
+        margin: 0;
+      }
+
+      h3 {
+        margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+      }
+
+      .header-container {
+        width: 100%;
+        height: 400px;
+        background-color: #D3EDFC;
+      }
+
+      .navigation-container .navigation-container__list  {
+        width: 35%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navigation-container .navigation-container__list .navigation-container__list-item {
+        width: 30%;
+        list-style: none;
+        padding: 20px 30px;
+        text-align: center;
+      }
+
+      .navigation-container__list-item:focus {
+        background-color: #EEEEEE;
+        }
+
+      .navigation-container__list-item a {
+        text-decoration: none;
+        color: #000000;
+        width: 100%;
+        height: 100%;
+      }
+
+      .description-block {
+        display: none;
+      }
+      
+      .description-block:target {
+        display: block;
+        width: 100%;
+      }
+
+      .delivery-block {
+        display: none;
+      }
+
+      .delivery-block:target {
+        display: block;
+        width: 100%;
+      }
+
+      .payments-block {
+        display: none;
+      }
+
+      .payments-block:target {
+        display: block;
+        width: 100%;
+      }
+
+      .sidebar {
+        width: 23%;
+        height: 970px;
+        margin-top: -230px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .sidebar-heading {
+        height: 200px;
+        background: #FAE205;
+        border-radius: 8px 8px 0px 0px;
+      }
+
+      .sidebar-divider {
+        height: 40px;
+        background: #B0AFAF;
+      }
+
+      .tab-rows-wrapper {
+        display: flex;
+        gap: 40px
+      }
+
+      .tab-row {
+        width: 90%;
+        height: 30px;
+        background: #B0AFAF;
+        border-radius: 4px;
+        list-style: none;
+      }
+
+      .tab-rows-wrapper ul {
+        width: 33%;
+      }
+
+      .tab-row:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .about-delivery-block {
+        height: 500px;
+        padding: 50px 20px;
+        background: #FFFBD2;
+      }
+
+      .more-products-block {
+        padding: 50px 20px;
+        height: 409px;
+      }
+
+      .more-products-list {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+      }
+
+      .more-products-list__item {
+        list-style: none;
+        width: 20%;
+        height: 250px;
+        background: #D3EDFC;
+      }
+
+      .footer {
+        background: #EEEEEE;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 24px;
+        line-height: 29px;
+      }
+
+      .rows-and-sidebar-block {
+        display: grid;
+        grid-template-columns: repeat(2, 81%);
+        grid-column-gap:6px;
+        padding-bottom: 30px;
+        padding: 30px 0px 30px 20px;
+        background: #EEEEEE;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-container"></div>
+
+      <div class="navigation-container">
+        <ul class="navigation-container__list">
+          <li tabindex="1" class="navigation-container__list-item">
+            <a href="#description">
+              Description
+            </a>
+          </li>
+          <li tabindex="2" class="navigation-container__list-item">
+            <a href="#delivery">
+              Delivery
+            </a> 
+          </li>
+          <li tabindex="3" class="navigation-container__list-item">
+            <a href="#payments">
+              Payments
+            </a> 
+          </li>
+        </ul>
+      </div>
+
+        <div class="description-block" id="description">
+          <div class="rows-and-sidebar-block">
+            <div class="tab-rows-wrapper">
+              <ul>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+              </ul>
+
+              <ul>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+              </ul>
+
+              <ul>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+              </ul>
+            </div>
+
+            <div class="sidebar">
+              <div class="sidebar-heading"></div>
+              <div class="sidebar-divider"></div>
+              <div class="sidebar-main"></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="delivery-block" id="delivery">
+          <div class="rows-and-sidebar-block">
+            <div class="tab-rows-wrapper">
+              <ul>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+              </ul>
+
+              <ul>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+              </ul>
+
+              <ul>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+              </ul>
+            </div>
+
+          <div class="sidebar">
+            <div class="sidebar-heading"></div>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-main"></div>
+          </div>
+          
+        </div>
+
+          <div class="about-delivery-block">
+            <h3>About delivery</h3>
+            <ul class="more-products-list">
+              <li class="more-products-list__item"></li>
+              <li class="more-products-list__item"></li>
+              <li class="more-products-list__item"></li>
+              <li class="more-products-list__item"></li>
+              <li class="more-products-list__item"></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="payments-block" id="payments">
+          <div class="rows-and-sidebar-block">
+            <div class="tab-rows-wrapper">
+              <ul>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+              </ul>
+
+              <ul>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+              </ul>
+
+              <ul>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+                <li class = "tab-row"></li>
+              </ul>
+            </div>
+            <div class="sidebar">
+              <div class="sidebar-heading"></div>
+              <div class="sidebar-divider"></div>
+              <div class="sidebar-main"></div>
+            </div>
+          </div>
+        </div>
+
+      <div class="more-products-block">
+        <h3>More products</h3>
+        <ul class="more-products-list">
+          <li class="more-products-list__item"></li>
+          <li class="more-products-list__item"></li>
+          <li class="more-products-list__item"></li>
+          <li class="more-products-list__item"></li>
+          <li class="more-products-list__item"></li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        © Copyright
+      </div>
+    </div>
+  </body>
+</html>
